@@ -1,6 +1,6 @@
 # Pressure Run Game (MATLAB)
 
-**Developer:** Ta'Shawnna Green  
+**Developer:** Ta'shawnna Green  
 **Technologies Used:** MATLAB, App Designer, FSR, ADXL337 Accelerometer, DAQ, Signal Filtering
 
 ## 🧠 Overview
