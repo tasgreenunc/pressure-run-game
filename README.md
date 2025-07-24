@@ -35,7 +35,15 @@ Pressure Run is a 2-player obstacle maze game built in MATLAB App Designer. Play
 - `fsr_read.m`, `accel_filter.m`, `collision.m` — Sub-functions  
 - `README.md` — You’re here!
 
-## 📌 Future Work
-- Phase 2: Arduino/JavaScript port  
-- Phase 3: Web-based version using React or p5.js  
+## ⚠️ Important Note
+
+This MATLAB game **requires real-time sensor input** from a physical circuit using a Force Sensitive Resistor (FSR), an ADXL337 analog accelerometer, and a DAQ (AD3). The game will not run correctly without this hardware.
+
+For testing/demo purposes, you can simulate signals in MATLAB by replacing analog input functions with dummy data.
+
+
+% Simulated FSR/accelerometer input for testing GUI
+fsr_sim = 0.5 + 0.1 * randn(1, 1000);  % Fake FSR signal
+accel_sim = sin(linspace(0, 2*pi, 1000));  % Fake Y-axis motion
+
 
